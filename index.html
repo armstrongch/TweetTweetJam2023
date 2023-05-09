@@ -1,0 +1,2 @@
+<p><h1><script src="j.js"></script><script>function d(){for(m="",j=0;j++<25;)m+=j==s?"💀":j==e?"👿":j==p?"🙂":j==t?"🍪":"⬜",j%5==0&&(m+="<br>");$("p").html(m),$("h1").html(v)}p=7,s=9,e=17,t=19,v=0,b={37:-1,38:-5,39:1,40:5},d(),u=j=>{null!=j&&(p=g(p,j),n=v%2==1?1:-1,s=g(s,1*n),n*=-1,e=g(e,5*n),p==t&&(t=(t+13)%25+1,v++),p!=s&&p!=e||(v+=" RIP",p=999),d())},g=(n,e)=>(n%5+e==0&&(n+=5),n%5==0&&1==e&&(n-=5),n+e<1&&(n+=25),n+e>25&&(n-=25),n+=e),k=n=>{u(b[n.keyCode])},$(document).on("keydown",k);
+</script>

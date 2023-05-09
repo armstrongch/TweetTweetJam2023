@@ -1,0 +1,26 @@
+a: current_position
+b
+c: keydown event parameter
+d: draw function
+e: evil face
+f
+g: get_position
+h
+i: increment
+j: map_square
+k: keydown event listener function
+l
+m: map
+n: enemy movement modifier
+o
+p: player
+q: random value
+r: return_value
+s: skull
+t: tasty cookie
+u: update
+v: value (score)
+w
+x: id of map element
+y: id of status element
+z

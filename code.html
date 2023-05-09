@@ -1,0 +1,52 @@
+<p><h1><script src="j.js"></script><script>
+p=7;
+s=9;
+e=17;
+t=19;
+v=0;
+b={37:-1,38:-5,39:1,40:5}
+d()
+u = (i) =>
+{
+	if (i==null){return;}
+	p = g(p,i);
+	n = v%2==1?1:-1;
+	s = g(s,1*n);
+	n = n*-1
+	e = g(e,5*n);
+	if (p==t)
+	{
+		t=(t+13)%25+1;
+		v++;
+	}
+	if (p==s || p==e)
+	{
+		v += " RIP"
+		p = 999;
+	}
+	
+	d()
+}
+
+function d()
+{
+	m="";j=0;while(j++<25){
+		m+= j==s ? "💀" : j==e ? "👿" : j==p ? "🙂" : j==t ? "🍪" : "⬜";
+		if(j%5==0){m+="<br>"}
+	}
+	$('p').html(m);
+	$('h1').html(v);
+}
+
+g = (r,i) =>
+{
+	if(r%5+i==0){r+=5}
+	if(r%5==0&&i==1){r-=5;}
+	if(r+i<1){r+=25}
+	if(r+i>25){r-=25}
+	r+=i;
+	return r;
+}
+k = (c) => {u(b[c.keyCode])}
+$(document).on('keydown',k);
+</script>
